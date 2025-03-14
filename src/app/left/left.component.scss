@@ -1,0 +1,29 @@
+.left-nav {
+    background-color: #2C3E50;  /* Dark background for left nav */
+    padding: 20px;
+    height: 100vh;  /* Full viewport height */
+    color: #fff;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link a {
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #3B4B5A;  /* Divider for each link */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link a:hover {
+    background-color: #1ABC9C; /* Stylish green hover effect */
+}
+
+.link:last-child a {
+    border-bottom: none; /* Remove divider from last link */
+}

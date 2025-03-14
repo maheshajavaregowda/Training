@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #4CAF50; /* Initial color */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elegant shadow */
+    transition: background-color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    background-color: #45a049; /* Slightly darker green for hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+button {
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+    transform: scale(1.05); /* Slight zoom for emphasis */
+}
