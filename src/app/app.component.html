@@ -1,7 +1,13 @@
 <div class="main-container">
     <div class="header">
-        <app-header [title]="title" (onclik)="onChnages($event)"></app-header>
+        <app-header *ngIf="count !=10"[title]="title" [count]="count"
+        (onclik)="onChnages($event)">
+            <h1>Hello Header 1</h1>
+            <p #p>{{count}}</p>
+            <h1>Hello Header 1</h1>
+        </app-header>
     </div>
+    <button (click)="onCounterChnage()">Counter</button>
 
     <div class="content-wrapper">
         <div class="left-nav">

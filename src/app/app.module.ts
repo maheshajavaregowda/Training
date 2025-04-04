@@ -9,6 +9,10 @@ import { LeftComponent } from './left/left.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RightComponent } from './right/right.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MyServiceService } from './my-service.service';
 
 @NgModule({
   declarations: [
@@ -16,14 +20,16 @@ import { RightComponent } from './right/right.component';
     LeftComponent,
     HeaderComponent,
     FooterComponent,
-    RightComponent
+    RightComponent,
+    UserListComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule,FormsModule
+    CommonModule,FormsModule, HttpClientModule
   ],
-  providers: [],
+  providers: [MyServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
