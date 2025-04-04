@@ -8,8 +8,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   // changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
- title = 'User not logged in'
- onChnages(title:string){
-  this.title=title
- }
+  title = 'User not logged in';
+  count: number = 0;
+  onChnages(title: string) {
+    // this.title = title;
+  }
+
+  onCounterChnage() {
+    this.count++;
+  }
 }

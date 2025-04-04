@@ -1,12 +1,16 @@
 <div class="left-nav">
     <ul class="product-list">
-        <li class="link"><a href="#">Product 1</a></li>
-        <li class="link"><a href="#">Product 2</a></li>
+        <!-- <li *ngIf="flag" [ngStyle]="{'background-color': color ? 'blue': 'red','color': color ? 'blue': 'red'}" class="link"><a href="#">Product 1</a></li>
+        <li [ngClass]="{'bg-gray':color,'bg-yellow':!color}" class="link"><a href="#">Product 2</a></li>
         <li class="link"><a href="#">Product 3</a></li>
         <li class="link"><a href="#">Product 4</a></li>
         <li class="link"><a href="#">Product 5</a></li>
         <li class="link"><a href="#">Product 6</a></li>
         <li class="link"><a href="#">Product 7</a></li>
-        <li class="link"><a href="#">Product 8</a></li>
+        <li class="link"><a href="#">Product 8</a></li> -->
+        <li class="link" *ngFor="let link of links;let isEven=even">
+            <a (click)="onClick(link.id)" 
+            [ngClass]="{'even':isEven,'add':!isEven}">{{link.name}}</a>
+        </li>
     </ul>
 </div>
